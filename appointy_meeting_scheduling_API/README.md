@@ -3,12 +3,12 @@
 
 The task is to develop a basic version of meeting scheduling API. 
 Meetings should have the following Attributes. 
-Id
-Title
-Participants
-Start Time
-End Time
-Creation Timestamp
+-> Id
+-> Title
+-> Participants
+-> Start Time
+-> End Time
+-> Creation Timestamp
 
 Participants should have the following Attributes. All fields are mandatory unless marked optional:
 Name
