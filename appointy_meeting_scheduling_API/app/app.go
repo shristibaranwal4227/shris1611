@@ -87,4 +87,5 @@ func (a *Application) handleRequest(handler RequestHandlerFunction) http.Handler
 	return func(w http.ResponseWriter, r *http.Request) {
 		handler(a.DB, w, r)
 	}
+	
 }
