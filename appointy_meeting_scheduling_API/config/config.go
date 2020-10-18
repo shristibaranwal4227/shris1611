@@ -27,3 +27,4 @@ func GetConfig() *scheduling {
 		},
 	}
 }
+
