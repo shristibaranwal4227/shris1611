@@ -38,3 +38,4 @@ var GetUser = func(w http.ResponseWriter, r *http.Request) {
 	resp["data"] = users
 	u.Respond(w, resp)
 }
+
