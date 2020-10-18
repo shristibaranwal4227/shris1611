@@ -45,3 +45,4 @@ func DBMigrate(db *gorm.DB) *gorm.DB {
 	db.Model(&Task{}).AddForeignKey("meeting_id", "meeting(id)", "CASCADE", "CASCADE")
 	return db
 }
+
