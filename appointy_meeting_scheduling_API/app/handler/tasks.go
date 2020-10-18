@@ -174,3 +174,4 @@ func getTaskOr404(db *gorm.DB, id int, w http.ResponseWriter, r *http.Request) *
 	}
 	return &task
 }
+
