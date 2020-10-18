@@ -40,4 +40,4 @@ Must return a an array of meetings in JSON format that have the participant rece
 Additional Constraints/Requirements:
 The API should be developed using Go.
 MongoDB should be used for storage.
-Only packages/libraries listed here and here can be used.
+Only packages/libraries listed here and here can be used..
