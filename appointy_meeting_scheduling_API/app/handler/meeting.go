@@ -121,3 +121,4 @@ func getMeetingOr404(db *gorm.DB, title string, w http.ResponseWriter, r *http.R
 	}
 	return &meeting
 }
+
