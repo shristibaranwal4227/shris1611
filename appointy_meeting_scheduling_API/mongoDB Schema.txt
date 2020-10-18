@@ -1,11 +1,11 @@
-There are no meetings longer than 1 day, the reason we have startDate and endDate is to calculate the length of the meetings, its start and end time.
+#There are no meetings longer than 1 day, the reason we have startDate and endDate is to calculate the length of the meetings, its start and end time.
 
-We need to be able to perform queries, most efficiently, along the lines of:
+#We need to be able to perform queries, most efficiently, along the lines of:
 
-get all meetings for a specific meeting id
-get meetings for a participants between two different dates
-get meetingsfor a user between different dates
-cancel/remove meetings
+- get all meetings for a specific meeting id
+- get meetings for a participants between two different dates
+- get meetingsfor a user between different dates
+- cancel/remove meetings
 
 
 
@@ -41,7 +41,7 @@ meeting_scheduler
 
 
 
->db.createCollection("meetings")
+>db.createCollection("Participants")
 { "ok" : 1 }
 
 > db.Participants.insert({
@@ -101,6 +101,7 @@ meeting_scheduler
 
 
 
+
 > db.Participants.insertMany(
 	[
 		{
@@ -117,6 +118,80 @@ meeting_scheduler
 			participants_name: "Ragini",
 			email: "yrags768@gmail.com",
 			RSVP: "Yes",
+		}
+	]
+)
+{
+	"acknowledged" : true,
+	"insertedIds" : [
+		ObjectId("5dfgfhh0fb13eec3963bed"),
+		ObjectId("5ddncmv0fb13eec3963bee"),
+		ObjectId("5dpulkfefb13eec3963bef")
+	]
+}
+
+
+
+>db.createCollection("Scheduling")
+{ "ok" : 1 }
+
+> db.Scheduling.insert({
+
+	Dialect:  "string"
+	Host:     "string"
+	Port:     "int"
+	Username: "string"
+	Password: "string"
+	Name:     "string"
+	Charset:  "string"
+	
+})
+
+
+> db.Scheduling.insertMany(
+	[
+		{
+			Dialect:  "MongoDB",
+			Host:     "127.0.0.1",
+			Port:     3306,
+			Username: "Shristi",
+			Password: "Deeplearning(16)",
+			Name:     "appointy_meeting_scheduler",
+			Charset:  "utf8",
 		},
+		{
+			Dialect:  "MongoDB",
+			Host:     "127.0.0.1",
+			Port:     3306,
+			Username: "Khushboo",
+			Password: "Random*yes",
+			Name:     "appointy_meeting_scheduler",
+			Charset:  "utf8",
+		},
+		{
+			Dialect:  "MongoDB",
+			Host:     "127.0.0.1",
+			Port:     3306,
+			Username: "Ragini",
+			Password: "itselfpass",
+			Name:     "appointy_meeting_scheduler",
+			Charset:  "utf8",
+	]
+)
+{
+	"acknowledged" : true,
+	"insertedIds" : [
+		ObjectId("5dfgfhbfjdmdki45963bed"),
+		ObjectId("5ddncmvbvsiw7183963bee"),
+		ObjectId("5dpulkfmaqwa458d563bef")
+	]
+}
+
+
 		
+
+
+
+
+
 
