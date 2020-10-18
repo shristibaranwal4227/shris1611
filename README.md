@@ -40,5 +40,5 @@ Develop an HTTP JSON API capable of the following operations,
 Additional Constraints/Requirements:
 1) The API should be developed using Go.
 2) MongoDB should be used for storage.
-3) Only packages/libraries listed here and here can be used..
+
 
